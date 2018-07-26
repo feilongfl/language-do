@@ -1,0 +1,50 @@
+'fileTypes': [
+  'do'
+]
+'name': 'do'
+'patterns': [
+  {
+    'include': '#comments'
+  }
+  {
+    'include': '#keywords'
+  }
+  {
+    'include': '#strings'
+  }
+  {
+    'include': '#operator'
+  }
+]
+'repository':
+  'comments':
+    'patterns': [
+      {
+        'begin': '^#'
+        'end': '\\n'
+        'name': 'comment.line.sharp.do'
+      }
+    ]
+  'keywords':
+    'patterns': [
+      {
+        'match': '^(vlog|vsim|add)\\b'
+        'name': 'keyword.other.do'
+      }
+    ]
+  'strings':
+    'patterns': [
+      {
+        'begin': '"'
+        'end': '"'
+        'name': 'string.quoted.double.do'
+      }
+    ]
+  'operator':
+    'patterns': [
+      {
+        'match': '-.*?\\b'
+        'name': 'keyword.operator.do'
+      }
+    ]
+'scopeName': 'source.do'

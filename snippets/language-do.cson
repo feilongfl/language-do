@@ -1,0 +1,32 @@
+'.source.do':
+#M
+  'main_clean':
+    'prefix': 'main_clean'
+    'body': ".main clean"
+#N
+  'new_do_file':
+    'prefix': 'new_do_file'
+    'body': """
+        # close sim run before and clear console
+        quit -sim
+        .main clear
+
+        # compile verilog files
+        vlog ./*.v
+        vlog ../src/*.v
+
+        # setup sim and add log wave
+        vsim -novopt work.tb_top
+        add wave /tb_top/*
+
+        # run
+        run 1ms
+    """
+#V
+  'vlog':
+    'prefix': 'always_c'
+    'body': "vlog ${0:./*}.v"
+
+  'vsim_noopt':
+      'prefix': 'vsim_noopt'
+      'body': "vsim -novopt ${0:work.tb_top}"
