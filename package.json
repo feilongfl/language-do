@@ -1,0 +1,17 @@
+{
+  "name": "language-do",
+  "version": "0.1.0",
+  "description": "Modelsim do language support in Atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feilongfl/language-do"
+  },
+  "bugs": {
+    "url": "https://github.com/feilongfl/language-do/issues"
+  },
+  "license": "GPL",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
