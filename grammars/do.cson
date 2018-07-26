@@ -28,7 +28,7 @@
   'keywords':
     'patterns': [
       {
-        'match': '^(vlog|vsim|add)\\b'
+        'match': '^(.*?)\\s'
         'name': 'keyword.other.do'
       }
     ]
@@ -43,7 +43,7 @@
   'operator':
     'patterns': [
       {
-        'match': '-.*?\\b'
+        'match': '-.*?\\s'
         'name': 'keyword.operator.do'
       }
     ]
