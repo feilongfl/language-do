@@ -22,6 +22,10 @@
         # run
         run 1ms
     """
+#Q
+  'quit_sim':
+      'prefix':'quit_sim'
+      'body':'quit -sim'
 #V
   'vlog':
     'prefix': 'always_c'
